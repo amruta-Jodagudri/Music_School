@@ -35,11 +35,11 @@ const musicSchoolContent = [
 ];
 
 function WhyChooseUs() {
-  return (
-    <div>
-        <StickyScroll content={musicSchoolContent}/>
-    </div>
-  )
+    return (
+        <div>
+            <StickyScroll content={musicSchoolContent}/>
+        </div>
+    )
 }
 
 export default WhyChooseUs
