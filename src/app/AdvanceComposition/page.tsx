@@ -1,31 +1,3 @@
-// 'use client'
-// import { AuroraBackground } from "@/components/ui/aurora-background";
-// import { motion } from "framer-motion";
-
-// const page = () => {
-//     return (
-//         <div>
-//             <AuroraBackground>
-//                 <motion.div
-//                     initial={{ opacity: 0.0, y: 40 }}
-//                     whileInView={{ opacity: 1, y: 0 }}
-//                     transition={{
-//                     delay: 0.3,
-//                     duration: 0.8,
-//                     ease: "easeInOut",
-//                     }}
-//                     className="relative flex flex-col gap-4 items-center justify-center px-4"
-//                 >
-                    
-//                 </motion.div>
-//             </AuroraBackground>
-//         </div>
-//     )
-// }
-
-// export default page
-
-
 "use client";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { cn } from "@/utils/cn";
@@ -47,7 +19,7 @@ const page =()=> {
             }}
             className="relative flex flex-col gap-4 items-center justify-center px-4 h-auto"
             >
-            <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] pt-96 pb-10">
+            <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] lg:mt-96 md:mt-96">
                 {items.map((item, i) => (
                     <BentoGridItem
                     key={i}
