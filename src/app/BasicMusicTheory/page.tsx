@@ -7,8 +7,8 @@ function BasicMusicTheory() {
         <div className="min-h-screen bg-black py-12 pt-36">
             <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">Basic Theory Of Music</h1>
             <div className="flex flex-wrap justify-center">
-                {MusicTheory.BasicTheory.map((BasicTheory)=>(
-                    <DirectionAwareHover imageUrl={BasicTheory.imageUrl} className='p-10'>
+                {MusicTheory.BasicTheory.map((BasicTheory,index)=>(
+                    <DirectionAwareHover key={index} imageUrl={BasicTheory.imageUrl} className='p-10'>
                         <p className="font-bold text-xl">{BasicTheory.Title}</p>
                         <p className="font-normal text-sm">{BasicTheory.Description}</p>
                     </DirectionAwareHover>
